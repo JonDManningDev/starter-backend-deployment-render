@@ -1,12 +1,36 @@
-# Starter: Backend Deployment
+# Backend Deployment Starter Project
 
-This is starter code for the Back End Deployment module. Follow the instructions below to get everything up and running.
+This repository contains starter code for the Back-End Deployment module. It demonstrates how to deploy a back-end server using databases and migrations.
 
-## Instructions
+## Features
+- Server setup with database connection
+- Knex migrations and seed files for database management
 
-1. Fork and clone this repository.
-1. Run `cp .env.sample .env`.
-1. Update your `.env` file with a connection URL to your database.
-1. Run `npm install`.
-1. Run `npx knex migrate:latest`.
-1. Run `npx knex seed:run`.
+## Installation
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Thinkful-Ed/starter-backend-deployment-render.git
+   ```
+2. Copy the environment variables:
+   ```bash
+   cp .env.sample .env
+   ```
+3. Update the `.env` file with your database connection URL.
+4. Install dependencies:
+   ```bash
+   npm install
+   ```
+5. Run the migrations:
+   ```bash
+   npx knex migrate:latest
+   ```
+6. Seed the database:
+   ```bash
+   npx knex seed:run
+   ```
+
+## Technologies
+- **Node.js**: JavaScript runtime for building server-side applications.
+- **Express**: Web framework for managing server routes.
+- **Knex.js**: SQL query builder for managing database interactions.
